@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    min-height: 100vh;
+    background:rgb(125, 207, 228) ;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    background: brown;
+}
+
+header,form{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-top: 40px;
+}
+input{
+    border-bottom-left-radius:30px;
+    border-top-left-radius:30px;
+}
+input,button{
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    border: none;
+    background: white;
+    outline: none;
+    text-transform: capitalize;
+}
+button{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color:rgb(64, 218, 64);
+    border-bottom-right-radius:30px;
+    border-top-right-radius:30px;
+}
+button:hover{
+    transition: .5s;
+    background: black;
+    color:rgb(64, 218, 64) ;
+}
+.todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list{
+    min-width: 20%;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.todo{
+    margin: 1rem 0.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+.todo li{
+    flex: 1;
+}
+.delete_btn{
+    background: red;
+    cursor: pointer;
+    border-bottom-right-radius:30px;
+    border-top-right-radius:30px;
+}
+.delete_btn:hover{
+    background: black;
+    color: red;
+}
+.todo_item{
+    padding: 0rem 0.5rem;
+}
+.fa-trash{
+    pointer-events: none;
+}
